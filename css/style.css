@@ -1,0 +1,90 @@
+* {box-sizing: border-box;}
+ 
+.mySlides {display:none}
+
+
+.Navbox{
+    background-color: white;
+    height: 89px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+  }
+  .nav_logo{
+    float: left;
+    width: 260px;
+    padding-left: 30px;
+  }
+  
+  nav a{
+    text-decoration: none;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #696969;
+    font-size: 17px;
+  }
+  nav a:hover{
+    color: rgb(231, 166, 231);
+  }
+  .nav_links{
+    float: left;
+    margin: 36px 0px 0px 40px;
+    padding-left: 25px;
+  }
+}
+
+.search-container {
+  float: right;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 28px;
+  margin-left: 200px;
+  font-size: 17px;
+  border: 1px solid black;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  height: 34px;
+  margin-top: 28px;
+  margin-right: 99px;
+  background: rgb(202, 159, 211);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: rgb(244, 166, 247);
+}
+
+.w3-red, .w3-hover-red:hover {
+  color: #fff!important;
+  background-color: #f44336!important;
+}
+
+.grey, .w3-hover-light-grey:hover, .gray, .gray:hover {
+  color: rgb(128, 125, 125)!important;
+  background-color: #f1f1f1!important;
+}
+
+.w3-btn, .button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+ 
+ 
+

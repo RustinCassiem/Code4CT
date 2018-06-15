@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code4CT</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/core.js" charset="utf-8"></script>
+</head>
+<body>   
+<div class="Navbox">
+  <a class="nav_logo"href="#"><img src="http://code4ct.com/wp-content/uploads/2016/06/code4ct-logo-1.jpg" alt="logo" width="260px" height="80px"></a>
+  <nav>
+    <a class="nav_links" href="#">HOME</a>
+    <a class="nav_links" href="courses.html">COURSES</a>
+    <a class="nav_links" href="portfolio.html">PORTFOLIO</a>
+    <a class="nav_links" href="about.html">ABOUT</a>
+    <a class="nav_links" href="contact.html">CONTACT</a>
+  </nav>
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="w3-content">
+  <img class="mySlides" src="images/Image.jpg"  style="width:100%">
+  <img class="mySlides" src="images/Image2.jpg" style="width:90%">
+  <img class="mySlides" src="images/groupImage.jpg"  style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="button demo" onclick="currentDiv(1)">1</button> 
+  <button class="button demo" onclick="currentDiv(2)">2</button> 
+  <button class="button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+
+</body>
+</html>
