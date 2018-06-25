@@ -1,76 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Code4CT</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="js/core.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code4CT</title>
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/imagesettings.css">
+  <link rel="stylesheet" href="css/Navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/core.js"></script>
 </head>
-<body>   
-<div class="Navbox">
-  <a class="nav_logo"href="#"><img src="http://code4ct.com/wp-content/uploads/2016/06/code4ct-logo-1.jpg" alt="logo" width="260px" height="80px"></a>
-  <nav>
-    <a class="nav_links" href="#">HOME</a>
-    <a class="nav_links" href="courses.html">COURSES</a>
-    <a class="nav_links" href="portfolio.html">PORTFOLIO</a>
-    <a class="nav_links" href="about.html">ABOUT</a>
-    <a class="nav_links" href="contact.html">CONTACT</a>
-  </nav>
-  <div class="search-container">
-    <form>
+<body>
+  <div class="Navbox">
+    <a class="nav_logo"href="index.html"><img  class="logo" src="http://code4ct.com/wp-content/uploads/2016/06/code4ct-logo-1.jpg" alt="logo"></a>
+    <nav>
+      <a class="nav_links" href="#">HOME</a>
+      <a class="nav_links" href="courses.html">COURSES</a>
+      <a class="nav_links" href="portfolio.html">PORTFOLIO</a>
+      <a class="nav_links" href="about.html">ABOUT</a>
+      <a class="nav_links" href="contact.html">CONTACT</a>
+    </nav>
+    <div class="search-container">
       <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+      <button type="submit" ><i class="fa fa-search"></i></button>
+    </div>
   </div>
-</div>
-<div class="w3-content">
-  <img class="mySlides" src="images/Image.jpg"  style="width:100%">
-  <img class="mySlides" src="images/Image2.jpg" style="width:90%">
-  <img class="mySlides" src="images/groupImage.jpg"  style="width:100%">
-</div>
 
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-    <button class="button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  <br>
+  <div class="slideshow-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="image1" src="images/groupImage.jpg" alt="Group image" >
+        </div><div class="text"><p class="textPosition"> Code for Cape Town <br>
+          We want to see young women empowered to leverage technology for social innovation, <br>
+          so that there is greater diversity in the African tech industry. We want high school <br>
+          girls to have an enabling environment to imagine and create new technology that is <br>
+          relevant to a South African context.</p><a href="contact.html"><button class="infoButtom">More info</button></a> </div>
+
+          <div class="item">
+            <img class="image2" src="images/Image.jpg" alt="Coding students" >
+          </div>
+
+          <div class="item">
+            <img id="image3" src="images/person1.jpg" alt="Coding students">
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <section class="about" style="margin-top:140px">
+      <div style="width: 40%;margin-left:5em;margin-bottom:10px">
+        <h2>Who We Are</h2>
+        <p><b>Code for Cape Town strives to see young women empowered to leverage technology for social innovation,
+          so that there is greater diversity in the African tech industry.</b></p>
+          <p>Code4CT is broadening perspectives about career opportunities for many
+            girls and is showing them that the ICT sector offers exciting career paths
+            with the opportunity for social impact. Through using coding and web building
+            skills, participants are exposed to how IT skills can be applied to solve problems,
+            and they are encouraged to use their knowledge to tackle a real local challenge.
+            Code for Cape Town equips high potential female learners with the coding and problem solving  skills. </p>
+            <button style="margin-top: 15px">Read More</button>
+          </div>
+          <div style="float: right; width: 36%;margin-top: -370px;margin-right: 150px;">
+            <img style="margin-left: 5px; margin-bottom: 5px" src="images/person1.JPG" alt="LAPTOP" width="250px" height="250px">
+            <img style="margin-left: 5px; margin-bottom: 5px" src="Images/person2.JPG" alt="STUDENT" width="250px" height="250px">
+            <img style="margin-left: 5px"; src="Images/person3.JPG" alt="TUTOR" width="250px" height="250px">
+            <img style="margin-left: 5px;margin-bottom: 1px" src= "Images/person4.JPG" alt="WORKSTATION" width="250px" height="250px">
+          </div>
+        </section>
+   <section>
+<div class="icon">
+<div >
+<img class="icons" src="Images/screen.png" style="margin-left: 40px" alt="pc">
+<h2 style="margin-left: 40px">Coding</h2>
+<p style="width: 60%; margin-left: 100px">Learn how to build your own websites using HTML, CSS, JavaScript & JQuery.
+  Go on to explore exciting modules from game development to user experience design.</p>
+</div>
+<div >
+  <img class="icons" src="Images/speaker.png" alt="multimedia">
+  <h2 style="margin-left: -30px">Communication</h2>
+  <p style="width: 80%; margin-left: 20px">Learn how to pitch ideas, represent yourself online, communicate professionally
+    and work with online collaboration tools.</p>
   </div>
-  <button class="button demo" onclick="currentDiv(1)">1</button> 
-  <button class="button demo" onclick="currentDiv(2)">2</button> 
-  <button class="button demo" onclick="currentDiv(3)">3</button> 
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
-</script>
-
+  <div>
+    <img class="icons" src="Images/wrench.png" style="" alt="wrench">
+    <h2>Problem Solving</h2>
+    <p style="width: 80%; margin-left: 30px">Apply your coding skills to issues you are interested in. You will learn how to tackle
+      complex problems using the design thinking process.</p>
+    </div>
+    <div>
+      <img class="icons" src="Images/documents.png" alt="documents">
+      <h2>Problem Solving</h2>
+      <p style="width: 80%; margin-left: 30px">Explore future options by meeting different companies doing exciting things with technology.
+        We offer career testing and connect you to our network of study institutions and bursary programs.</p>
+      </div>
+    </section>
+    <div class="container3">
+      <div >
+        <h2> Awesome Portfolio</h2>
+        <p class="paragraph">The success of our work depends on the support of like minded individuals and companies who come alongside us to work towards our mission.</p>
+        <img src="images/container5.jpg" alt="impact" width="40%" height="600px">
+        <div class="portfolio">
+          <img src="images/container4.jpg" alt="students" width="300px" height="300px">
+          <img src="images/container1.jpg" alt="students" width="300px" height="300px">
+          <br>
+          <img src="images/container2.jpg" alt="students" width="300px" height="300px">
+          <img src="images/container3.jpg" alt="students" width="300px" height="300px">
+        </div>
+      </div>
+    </div>
+      
+    <section id="container2">
+        <h2 style="border-bottom:1px solid gray;"><span style="border-bottom:2px solid #e38f84;">Meet</span> our team:</h2>
+  
+        <div id="meet_team">
+          <div class="Emma_Andrea">
+            <table>
+              <tr>
+                <td><span><img src="images/Emma.jpg" alt="" width="250px" height="300px"></span></td>
+                <td>
+                  <h3>Emma Dicks</h3>
+                  <span style="color:gray;">Founder and Director</span>
+                  <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+                </td>
+              </tr>
+              <tr>
+                <td><span><img src="images/Andrea.jpg" alt="" width="250px" height="300px"></span></td>
+                <td>
+                  <h3>Andrea Petersen</h3>
+                  <span style="color:gray;">Operations Lead</span>
+                  <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="Tegan_Tracy">
+            <table>
+              <tr>
+                <td><span><img src="images/Tegan.jpg" alt="tegan" width="250px" height="300px"></span></td>
+                <td>
+                  <h3>Tegan Crous</h3>
+                  <span style="color:gray;">Program Lead</span>
+                  <p>Tegan heads up the high school program.She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+                </td>
+              </tr>
+              <tr>
+                <td><span><img src="images/Tracy.jpg" alt="tracy" width="250px" height="300px"></span></td>
+                <td>
+                  <h3>Tracy-Anne Sikenjana</h3>
+                  <span style="color:gray;">Leadership Program Manager</span>
+                  <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
 </body>
 </html>

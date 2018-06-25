@@ -1,0 +1,115 @@
+* {box-sizing: border-box}
+body {
+  margin:0
+  
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 108em;
+  top: 2em;
+  position: relative;
+  margin-bottom: 0em;
+}
+
+#image3{
+  width: 100%;
+  height:50em;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: 5em;
+  color: rgba(9, 8, 12, 0.63);
+  background-color: rgba(179, 73, 201, 0.555);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(170, 167, 167, 0.8);
+}
+
+/* Caption text */
+.text {
+  display: block;
+  height:100%;
+  width: 100%;
+  background-color: #716e7457;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 50px;
+  position: absolute;
+  margin-left: 0em;
+  margin-bottom: 10em;
+  bottom: -10em;
+  text-align: center;
+}
+
+
+.textPosition{
+  margin-top: 20em;
+}
+
+.infoButtom{
+  background-color: rgba(220, 132, 223, 0.719);
+}
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(165, 89, 175, 0.719);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #8c5abe;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
