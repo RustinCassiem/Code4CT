@@ -14,7 +14,7 @@ input[type=text], select,{
 }
 
  .input{
-   width:10em;
+   width:15em;
  }
 input[type=submit]:hover {
     background-color: #45a049;
@@ -58,13 +58,17 @@ input[type=submit]:hover {
     border-radius: 5%;
     color: white;
     background-color: #e38f84;
-    margin-left: 19em;
+    margin-left: 5em;
 }
-
+ 
+.contact_info{
+    margin-left: 200px;
+    width: 20%;
+    height: 20%;
+}
 .info-page{
-    margin-left: 45em ;
-    margin-top: 50em ;
-    width: 50%;
+    margin-top: 20em ;
+    width: 100%;
 }
 
 form,.content{

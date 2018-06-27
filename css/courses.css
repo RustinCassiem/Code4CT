@@ -4,7 +4,7 @@ body{
 }
 
 #box{
-  padding-top: -200px
+   margin-top: -300px;
 }
 .centre{
     text-align: center;
@@ -24,7 +24,7 @@ body{
 }
 
 #Grid{
-    width: 400px;
+    width: 450px;
     box-shadow: 3px 3px 2px #888888;
     height: 300px;
     border: 1px solid rgba(240, 152, 167, 0.815);
@@ -35,7 +35,7 @@ body{
 }
 
 .content{
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .info{
@@ -63,6 +63,54 @@ img{
 }
 
 button{
-    background-color: rgba(212, 86, 206, 0.856);
+    /* background-color: rgba(212, 86, 206, 0.856); */
 
 }
+
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 230, 230);
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.cart{
+    height:50px;
+    width: 50px;
+    margin-right:100%;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+

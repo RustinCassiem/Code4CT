@@ -18,7 +18,6 @@ body { }
      justify-content: center; 
      background-color: black;
      height: 30em;
-     margin-right: 50em;
      padding: 80px;
      width: 100%;
      text-align: center;
@@ -27,8 +26,9 @@ body { }
 }
 
 .icons{
-    width: 6em
+    width: 6em;
 }
+
 
 .container3{
     margin-top: 3em;

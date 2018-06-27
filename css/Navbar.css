@@ -44,11 +44,13 @@ body {font-family: 'Lato', sans-serif;}
 .search-container {
   float: right;
 }
-
+.search{
+  margin-left: 3em;
+}
 input[type=text] {
   padding: 6px;
   margin-top: 28px;
-  margin-left: 3em;
+
   font-size: 17px;
   border: 1px solid black;
 }

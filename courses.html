@@ -23,10 +23,21 @@
     </nav>
     <div class="search-container">
       <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button class="search" type="submit"><i class="fa fa-search"></i></button>
     </div>
   </div>
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+
+
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="cart"  src="https://image.freepik.com/free-icon/man-pushing-a-shopping-cart_318-47133.jpg" alt="" ></span>
+    
   <div id="box">
+     
   <div class="centre"><h1 >Introductory Coding Courses</h1>
     <img  src="images/computer_screen.png" alt="Computer Screen"></div>
 
@@ -36,7 +47,7 @@
       <p class="content"><b>Duration:</b>3 hours</p>
       <p class="content"><b>Price:</b>R250</p>
       <button class="info resize">+</button>
-      <button class="resize">-</button>
+     
     </div>
     <div id="Grid">
       <h2 class="content">Intro to Coding: Web Pages</h2>
@@ -44,7 +55,6 @@
       <p class="content"><b>Duration:</b>3 hours</p>
       <p class="content"><b>Price:</b>R960</p>
       <button class="info resize">+</button>
-      <button class="resize">-</button>
     </div>
     <div id="Grid">
       <h2 class="content">Getting started as a developer</h2>
@@ -52,7 +62,6 @@
       <p class="content"><b>Duration:</b>3 hours</p>
       <p class="content"><b>Price:</b>R250</p>
       <button class="info resize">+</button>
-      <button class="resize">-</button>
     </div>
 
     <div class="centre"><img  src="images/Headphone-2.ico" alt="Headphones"></div>
@@ -63,7 +72,7 @@
       <p class="content"><b>Duration:</b>3 hours</p>
       <p class="content"><b>Price:</b>R250</p>
       <button class="info resize">+</button>
-      <button class="resize">-</button>
+    
     </div>
     <div id="Grid">
       <h2 class="content">Create with Code: Music</h2>
@@ -71,7 +80,6 @@
       <p class="content"><b>Duration:</b>3 hours</p>
       <p class="content"><b>Price:</b>R960</p>
       <button class="info resize">+</button>
-      <button class="resize">-</button>
     </div>
 
     <div class="move">
@@ -83,28 +91,24 @@
         <p class="content"><b>Duration:</b>3 hours</p>
         <p class="content"><b>Price:</b>R250</p>
         <button class="info resize">+</button>
-        <button class="resize">-</button>
       </div>
+
       <div id="Grid">
         <h2 class="content">Create with Code: Animation</h2>
         <p class="content">Learn computer science principles by coding animations using JavaScript.<p>
           <p class="content"><b>Duration:</b>3 hours</p>
           <p class="content"><b>Price:</b>R960</p>
           <button class="info resize">+</button>
-          <button class="resize">-</button>
         </div>
       </div>
 
       <div class="centre position"><h1 ><b>Beginner</b> Coding Courses</h1>
-        <div><img  src="images/connector.PNG" alt="Connector" class="centre2"><img  src="images/doc.PNG" alt="Connector" class="centre2"> <img  src="images/volume.PNG" alt="volume" class="centre2"></div>
-
         <div id="Grid">
           <h2 class="content">JavaScript</h2>
           <p class="content">Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application..</p>
           <p class="content"><b>Duration:</b> 6 days</p>
           <p class="content"><b>Price:</b> R1800</p>
           <button class="info resize">+</button>
-          <button class="resize">-</button>
         </div>
 
         <div id="Grid">
@@ -113,24 +117,71 @@
             <p class="content"><b>Duration:</b>6 days</p>
             <p class="content"><b>Price:</b>R1800</p>
             <button class="info resize">+</button>
-            <button class="resize">-</button>
           </div>
         </div>
+
         <div id="Grid">
           <h2 class="content">Python</h2>
           <p class="content">Develop a basic proficiency in programming principles and methods in Python.<p>
             <p class="content"><b>Duration:</b>6 days</p>
             <p class="content"><b>Price:</b>R1800</p>
             <button class="info resize">+</button>
-            <button class="resize">-</button>
           </div>
-        </div>
+            
+          <div class="centre position"><h1><b>Intermediate</b> Coding Courses </h1>
+          <div id="Grid">
+            <h2 class="content">Full Stack JavaScript</h2>
+            <p class="content">Develop an understanding of the front and backend development environment and basic proficiency in server side.d <p>
+              <p class="content"><b>Duration:</b>6 days</p>
+              <p class="content"><b>Price:</b>R1800</p>
+              <button class="info resize">+</button>
+            </div>
+          </div>
+
+          <div id="Grid">
+            <h2 class="content">Website Deployment</h2>
+            <p class="content">Learn how to manage and deploy code to a server environment so that you can host your own web pages.<p>
+              <p class="content"><b>Duration:</b>6 days</p>
+              <p class="content"><b>Price:</b>R1200</p>
+              <button class="info resize">+</button>             
+            </div>
+
+
   
-   
-   
-   
-   
-   
-      </div>
+
+
+
+
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+<script>
+   //Items to buy and adding and subtracting items
+    
+
+  
+
+
+
+  
+
+   //sidebar 
+      function openNav() {
+          document.getElementById("mySidenav").style.display = "block";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.display = "none";
+      }
+      </script>
  </body>
 </html>
