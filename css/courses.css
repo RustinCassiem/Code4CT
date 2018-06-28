@@ -76,7 +76,7 @@ button{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(231, 230, 230);
+    background-color: rgba(231, 230, 230, 0.637);
     overflow-x: hidden;
     padding-top: 60px;
 }
@@ -104,7 +104,7 @@ button{
 .cart{
     height:50px;
     width: 50px;
-    margin-right:100%;
+    margin-right:97%;
 }
 
 
