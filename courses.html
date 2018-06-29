@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/Navbar.css">
   <link rel="stylesheet" href="css/courses.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
   <div class="Navbox">
@@ -28,160 +28,273 @@
   </div>
 
   <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-
-
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="text_move">
+      <div id="shopping_cart">
+        <h4>Items added <p id="amountInCart"></h4></p> </h4>
+      </div>
+      <div id="shopping_list">
+        <h3>Your Cart :</h3>
+        <div id="cartItemList"></div>
+        <div id="cartBottom">
+          <h4 id="cartTotal">Total :</h4>
+          <button id="emptyCartList">Empty Cart</button>
+        </div>
+      </div>
     </div>
-    
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="cart"  src="https://image.freepik.com/free-icon/man-pushing-a-shopping-cart_318-47133.jpg" alt="" ></span>
-    
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="myFunction">
+  <img  class="cart" src="https://image.freepik.com/free-icon/man-pushing-a-shopping-cart_318-47133.jpg" alt="" onclick="openNav()"></span>
+
   <div id="box">
-     
-  <div class="centre"><h1 >Introductory Coding Courses</h1>
-    <img  src="images/computer_screen.png" alt="Computer Screen"></div>
 
-    <div id="Grid">
-      <h2 class="content">Create with Code: Web Pages</h2>
-      <p class="content">Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</p>
-      <p class="content"><b>Duration:</b>3 hours</p>
-      <p class="content"><b>Price:</b>R250</p>
-      <button class="info resize">+</button>
-     
-    </div>
-    <div id="Grid">
-      <h2 class="content">Intro to Coding: Web Pages</h2>
-      <p class="content">Code a simple one-page website using HTML and JQuery.</p>
-      <p class="content"><b>Duration:</b>3 hours</p>
-      <p class="content"><b>Price:</b>R960</p>
-      <button class="info resize">+</button>
-    </div>
-    <div id="Grid">
-      <h2 class="content">Getting started as a developer</h2>
-      <p class="content">Learn how to set up a development environment and practical skills to start coding.</p>
-      <p class="content"><b>Duration:</b>3 hours</p>
-      <p class="content"><b>Price:</b>R250</p>
-      <button class="info resize">+</button>
-    </div>
-
-    <div class="centre"><img  src="images/Headphone-2.ico" alt="Headphones"></div>
-
-    <div id="Grid">
-      <h2 class="content">Intro to Coding: Music</h2>
-      <p class="content">Code a song using SonicPi software on a Raspberry Pi computer.</p>
-      <p class="content"><b>Duration:</b>3 hours</p>
-      <p class="content"><b>Price:</b>R250</p>
-      <button class="info resize">+</button>
-    
-    </div>
-    <div id="Grid">
-      <h2 class="content">Create with Code: Music</h2>
-      <p class="content">Learn computer science principles by coding music with a Raspberry Pi computer.</p>
-      <p class="content"><b>Duration:</b>3 hours</p>
-      <p class="content"><b>Price:</b>R960</p>
-      <button class="info resize">+</button>
-    </div>
-
-    <div class="move">
-      <div class="centre"><img  src="images/play-icon.png" alt="Play icon"></div>
+    <div class="centre"><h1 >Introductory Coding Courses</h1>
+      <img  src="images/computer_screen.png" alt="Computer Screen"></div>
 
       <div id="Grid">
-        <h2 class="content">Intro to Coding: Animation</h2>
-        <p class="content">Create a 2D animation using coding language JavaScript.</p>
+        <h2 class="content">Create with Code: Web Pages</h2>
+        <p class="content">Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.</p>
         <p class="content"><b>Duration:</b>3 hours</p>
         <p class="content"><b>Price:</b>R250</p>
-        <button class="info resize">+</button>
+        <button class="info resize" id="course_btn1">+</button>
       </div>
+      <div id="Grid">
+        <h2 class="content">Intro to Coding: Web Pages</h2>
+        <p class="content">Code a simple one-page website using HTML and JQuery.</p>
+        <p class="content"><b>Duration:</b>3 hours</p>
+        <p class="content"><b>Price:</b>R960</p>
+        <button class="info resize" id="course_btn2">+</button>
+      </div>
+      <div id="Grid">
+        <h2 class="content">Getting started as a developer</h2>
+        <p class="content">Learn how to set up a development environment and practical skills to start coding.</p>
+        <p class="content"><b>Duration:</b>3 hours</p>
+        <p class="content"><b>Price:</b>R250</p>
+        <button class="info resize" id="course_btn3">+</button>
+      </div>
+
+      <div class="centre"><img  src="images/Headphone-2.ico" alt="Headphones"></div>
 
       <div id="Grid">
-        <h2 class="content">Create with Code: Animation</h2>
-        <p class="content">Learn computer science principles by coding animations using JavaScript.<p>
-          <p class="content"><b>Duration:</b>3 hours</p>
-          <p class="content"><b>Price:</b>R960</p>
-          <button class="info resize">+</button>
-        </div>
+        <h2 class="content">Intro to Coding: Music</h2>
+        <p class="content">Code a song using SonicPi software on a Raspberry Pi computer.</p>
+        <p class="content"><b>Duration:</b>3 hours</p>
+        <p class="content"><b>Price:</b>R250</p>
+        <button class="info resize" id="course_btn4">+</button>
+
+      </div>
+      <div id="Grid">
+        <h2 class="content">Create with Code: Music</h2>
+        <p class="content">Learn computer science principles by coding music with a Raspberry Pi computer.</p>
+        <p class="content"><b>Duration:</b>3 hours</p>
+        <p class="content"><b>Price:</b>R960</p>
+        <button class="info resize" id="course_btn5">+</button>
       </div>
 
-      <div class="centre position"><h1 ><b>Beginner</b> Coding Courses</h1>
+      <div class="move">
+        <div class="centre"><img  src="images/play-icon.png" alt="Play icon"></div>
+
         <div id="Grid">
-          <h2 class="content">JavaScript</h2>
-          <p class="content">Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application..</p>
-          <p class="content"><b>Duration:</b> 6 days</p>
-          <p class="content"><b>Price:</b> R1800</p>
-          <button class="info resize">+</button>
+          <h2 class="content">Intro to Coding: Animation</h2>
+          <p class="content">Create a 2D animation using coding language JavaScript.</p>
+          <p class="content"><b>Duration:</b>3 hours</p>
+          <p class="content"><b>Price:</b>R250</p>
+          <button class="info resize" id="course_btn6">+</button>
         </div>
 
         <div id="Grid">
-          <h2 class="content">Front End Web Development</h2>
-          <p class="content">Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.<p>
-            <p class="content"><b>Duration:</b>6 days</p>
-            <p class="content"><b>Price:</b>R1800</p>
-            <button class="info resize">+</button>
+          <h2 class="content">Create with Code: Animation</h2>
+          <p class="content">Learn computer science principles by coding animations using JavaScript.<p>
+            <p class="content"><b>Duration:</b>3 hours</p>
+            <p class="content"><b>Price:</b>R960</p>
+            <button class="info resize" id="course_btn7">+</button>
           </div>
         </div>
 
-        <div id="Grid">
-          <h2 class="content">Python</h2>
-          <p class="content">Develop a basic proficiency in programming principles and methods in Python.<p>
-            <p class="content"><b>Duration:</b>6 days</p>
-            <p class="content"><b>Price:</b>R1800</p>
-            <button class="info resize">+</button>
-          </div>
-            
-          <div class="centre position"><h1><b>Intermediate</b> Coding Courses </h1>
+        <div class="centre position"><h1 ><b>Beginner</b> Coding Courses</h1>
           <div id="Grid">
-            <h2 class="content">Full Stack JavaScript</h2>
-            <p class="content">Develop an understanding of the front and backend development environment and basic proficiency in server side.d <p>
+            <h2 class="content">JavaScript</h2>
+            <p class="content">Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application..</p>
+            <p class="content"><b>Duration:</b> 6 days</p>
+            <p class="content"><b>Price:</b> R1800</p>
+            <button class="info resize" id="course_btn8">+</button>
+          </div>
+
+          <div id="Grid">
+            <h2 class="content">Front End Web Development</h2>
+            <p class="content">Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.<p>
               <p class="content"><b>Duration:</b>6 days</p>
               <p class="content"><b>Price:</b>R1800</p>
-              <button class="info resize">+</button>
+              <button class="info resize" id="course_btn9">+</button>
             </div>
           </div>
 
           <div id="Grid">
-            <h2 class="content">Website Deployment</h2>
-            <p class="content">Learn how to manage and deploy code to a server environment so that you can host your own web pages.<p>
+            <h2 class="content">Python</h2>
+            <p class="content">Develop a basic proficiency in programming principles and methods in Python.<p>
               <p class="content"><b>Duration:</b>6 days</p>
-              <p class="content"><b>Price:</b>R1200</p>
-              <button class="info resize">+</button>             
+              <p class="content"><b>Price:</b>R1800</p>
+              <button class="info resize" id="course_btn10">+</button>
             </div>
 
+            <div class="centre position"><h1><b>Intermediate</b> Coding Courses </h1>
+              <div id="Grid">
+                <h2 class="content">Full Stack JavaScript</h2>
+                <p class="content">Develop an understanding of the front and backend development environment and basic proficiency in server side. <p>
+                  <p class="content"><b>Duration:</b>6 days</p>
+                  <p class="content"><b>Price:</b>R1800</p>
+                  <button class="info resize" id="course_btn11">+</button>
+                </div>
+              </div>
 
-  
+              <div id="Grid">
+                <h2 class="content">Website Deployment</h2>
+                <p class="content">Learn how to manage and deploy code to a server environment so that you can host your own web pages.<p>
+                  <p class="content"><b>Duration:</b>6 days</p>
+                  <p class="content"><b>Price:</b>R1200</p>
+                  <button class="info resize" id="course_btn12">+</button>
+                </div>
+
+                <div class="centre position"><h1><b>Social</b> Innovation</h1>
+                  <div id="Grid">
+                    <h2 class="content">Innovation Challenge</h2>
+                    <p class="content">Work in groups to design an innovative solution to a social issue by using the design thinking process. <p>
+                      <p class="content"><b>Duration:</b>3 days</p>
+                      <p class="content"><b>Price:</b>R750</p>
+                      <button class="info resize" id="course_btn13">+</button>
+                    </div>
+                  </div>
+
+                  <div id="Grid">
+                    <h2 class="content">CodeStorm</h2>
+                    <p class="content">Work in groups to create and present a code project that addresses a particular issue. <p>
+                      <p class="content"><b>Duration:</b>5 days</p>
+                      <p class="content"><b>Price:</b>R1500</p>
+                      <button class="info resize" id="course_btn14">+</button>
+                    </div>
+
+                    <div id="Grid">
+                      <h2 class="content">Industry Immersion</h2>
+                      <p class="content">Spend a week at a tech company and gain experience in industry.<p>
+                        <p class="content"><b>Duration:</b>5 days</p>
+                        <p class="content"><b>Price:</b>R1500</p>
+                        <button class="info resize" id="course_btn15">+</button>
+                      </div>
+
+                      <div class="move">
+
+                        <div class="centre position"><h1>Career and Life Skills</h1>
+                          <div id="Grid">
+                            <h2 class="content">Code Conversation</h2>
+                            <p class="content">Learn about tech careers from a panel of working professionals who will share their experiences with you.<p>
+                              <p class="content"><b>Duration:</b>1 days</p>
+                              <p class="content"><b>Price:</b>R300</p>
+                              <button class="info resize" id="course_btn16">+</button>
+                            </div>
+
+                            <div id="Grid">
+                              <h2 class="content">Networking</h2>
+                              <p class="content">Learn how to present yourself professionally when networking and put your skills to the test by attending local tech events. You will attend a training session and attend one event of your choice.<p>
+                                <p class="content"><b>Duration:</b>2 days</p>
+                                <p class="content"><b>Price:</b>R300</p>
+                                <button class="info resize" id="course_btn17">+</button>
+                              </div>
+                            </div>
+                            <div id="Grid">
+                              <h2 class="content">Presentation Skills</h2>
+                              <p class="content">Learn how to present an idea or project in a compelling manner. <p>
+                                <p class="content"><b>Duration:</b>1 days</p>
+                                <p class="content"><b>Price:</b>R300</p>
+                                <button class="info resize" id="course_btn18">+</button>
+                              </div>
+                            </div>
+
+                            <div id="Grid">
+                              <h2 class="content">Digital Communication Skills</h2>
+                              <p class="content">Learn how to communicate and collaborate in a 21st century work environment using digital workplace tools. <p>
+                                <p class="content"><b>Duration:</b>1 days</p>
+                                <p class="content"><b>Price:</b>R300</p>
+                                <button class="info resize" id="course_btn19">+</button>
+                              </div>
+
+                              <div id="Grid">
+                                <h2 class="content">CV & LinkedIn</h2>
+                                <p class="content">Learn how to present your skills effectively. <p>
+                                  <p class="content"><b>Duration:</b>1 days</p>
+                                  <p class="content"><b>Price:</b>R300</p>
+                                  <button class="info resize" id="course_btn20">+</button>
+                                </div>
+
+                                <div id="Grid">
+                                  <h2 class="content">Applying to Tertiary Studies</h2>
+                                  <p class="content">Make informed decisions about your future studies. <p>
+                                    <p class="content"><b>Duration:</b>1 days</p>
+                                    <p class="content"><b>Price:</b>R300</p>
+                                    <button class="info resize" id="course_btn21">+</button>
+                                  </div>
+
+                                  <div class="footer">
+                                    <footer>
+                                      <div>
+                                        <h4>Company</h4>
+                                        <ul>
+                                          <li><a href="about.html">ABOUT</a></li>
+                                          <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                          <li><a href="courses.html">COURSES</a></li>
+                                          <li><a href="contact.html">CONTACT</a></li>
+                                        </ul>
+                                      </div>
+                                      <div>
+                                        <h4>Learn More</h4>
+                                        <ul>
+                                          <li><a href="about.html">What we do</a></li>
+                                          <li><a href="portfolio.html">Our Work</a></li>
+                                          <li><a href="courses.html">Opportunities</a></li>
+                                        </ul>
+                                      </div>
+                                      <div>
+                                        <h4>Contact</h4>
+                                        <p> 021 685 0991 </p>
+                                        <p>info@code4ct.com</p>
+                                        <p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                                      </div>
+                                    </footer>
+                                  </div>
+                                  <section class="bottomfooter" style="margin-top: 150px; background-color: #EE534F">
+                                    <p style="float: left; margin-left: 100px">copyright © 2018 PRIVACY POLICY</p>
+                                    <p style="float: right; margin-right: 100px;">Follow Us:<a href="https://www.facebook.com/code4ct/" target="_blank"><i class="fa fa-facebook"></i></a>
+                                      <a href="https://twitter.com/@code4ct" target="_blank"><i class="fa fa-twitter"></i></a>
+                                      <a href="https://www.instagram.com/code4ct/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                      <a href="https://www.linkedin.com/company/9414552/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                      <a href="#" target="_blank"><i class="fa fa-skype"></i></a></p>
+                                    </section>
+                                  </div>
+
+                                  <script src="js/courses.js"></script>
+                                  <script>
+                                  //Items to buy and adding and subtracting items
+                                  function myFunction() {
+                                    var x = document.getElementsByClassName("cart");
+                                    if (x.style.display === "none") {
+                                      x.style.display = "block";
+                                    } else {
+                                      x.style.display = "none";
+                                    }
+                                  }
+
+                                  //sidebar
+                                  function openNav() {
+                                    document.getElementById("mySidenav").style.display = "block";
+                                  }
+
+                                  function closeNav() {
+                                    document.getElementById("mySidenav").style.display = "none";
+                                  };
 
 
-
-
-
-
-
-
-
-   </div>
-
-
-
-
-
-
-<script>
-   //Items to buy and adding and subtracting items
-    
-
-  
-
-
-
-  
-
-   //sidebar 
-      function openNav() {
-          document.getElementById("mySidenav").style.display = "block";
-      }
-      
-      function closeNav() {
-          document.getElementById("mySidenav").style.display = "none";
-      }
-      </script>
- </body>
-</html>
+                                </script>
+                              </body>
+                              </html>

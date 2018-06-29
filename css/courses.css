@@ -49,7 +49,6 @@ body{
 }
 
 img{
-    margin-top: 20px;
     height: 100px;
     width: 100px;
 }
@@ -70,13 +69,13 @@ button{
 
 .sidenav {
     display: none;
-    height: 100%;
-    width: 250px;
+    height: 80%;
+    width: 350px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(231, 230, 230);
+    top: 1;
+    right: 0;
+    background-color: rgba(238, 234, 234, 0.945);
     overflow-x: hidden;
     padding-top: 60px;
 }
@@ -90,27 +89,45 @@ button{
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #919090;
 }
 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0px;
     font-size: 36px;
     margin-left: 50px;
+    margin-top: 1.5em;
 }
 
 .cart{
+    position: fixed;
     height:50px;
     width: 50px;
-    margin-right:100%;
+    margin-left:95%;
+    margin-top: 2.2em;
 }
 
+
+
+#emptyCartList{
+    margin-right: 19em;
+    margin-top: 0em;
+}
+
+.footer{
+    margin-top: 45em;
+}
+
+.text_move{
+    margin-left: 10px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 
 

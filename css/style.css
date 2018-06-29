@@ -90,3 +90,15 @@ table {
     border-spacing: 2px;
     border-color: grey;
 }
+
+.teaminfo {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.subscribe{
+    margin-left: 40em;
+}
