@@ -783,3 +783,13 @@ $("#emptyCartList").click(function(){
     totalAmount = [];
     theList = [];
 })
+
+
+$("#emptyCartList").click(function(){
+    $("#cartItemList").text("");
+    document.getElementById("cartTotal").innerHTML = "Total : " + 0;
+    itemCount = 0;
+    $("#amountCart").text("0");
+    totalAmount = [];
+    theList = [];
+})

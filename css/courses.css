@@ -123,6 +123,12 @@ button{
 .text_move{
     margin-left: 10px;
 }
+ 
+.relocate{
+    position: fixed;
+    margin-left:90%;
+    margin-top: 2.2em;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

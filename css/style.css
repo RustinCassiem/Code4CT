@@ -1,4 +1,18 @@
-body { }
+button:after {
+    content: '»';   
+    opacity: 0;
+    transition: 7.50s;
+  }
+
+  button:hover {
+    width: 160px;
+
+  }
+
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
 
 .container1{
     margin-top: 3em;
@@ -102,3 +116,76 @@ table {
 .subscribe{
     margin-left: 40em;
 }
+
+
+#sponsor_carousel {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: sponsor_carousel;
+    height: 150px;
+    border: none;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 10px;
+    background: black;
+    z-index: 10000;
+  }
+  
+  #sponsor_carousel img {
+    height: 150px;
+    width: 200px;
+  }
+  
+  #sponsor_carousel .sponsor_logo {
+    height: 150px;
+    width: 200px;
+    border: none;
+    position: absolute;
+    z-index: -10;
+  }
+  
+  #sponsor_carousel #sponsor_wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    height: 200px;
+    background: black;
+    position: relative;
+    z-index: -10;
+  }
+  
+  .carousel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    background-color: #000;
+    overflow: hidden;
+  }
+  .carousel .subCarousel {
+    -webkit-animation-name: carousel;
+            animation-name: carousel;
+    -webkit-animation-duration: 18s;
+            animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    width: 5880px;
+    position: relative;
+    left: 100%;
+  }
+  .carousel .subCarousel img {
+    margin-right: 50px;
+  }
+  @-webkit-keyframes carousel {
+    100% {
+      position: relative;
+      left: -2880px;
+    }
+  }
+  @keyframes carousel {
+    100% {
+      position: relative;
+      left: -2880px;
+    }
+  }
