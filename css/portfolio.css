@@ -1,664 +1,313 @@
-/* Media query for iphones */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    /*this is homepage stylesheet*/
-    /*general styling*/
-    *{
-      box-sizing: border-box;
-    }
-    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
-    header{
-          display: grid;
-          grid-template-columns: repeat(1,1fr);
-          grid-template-rows: repeat(1,1fr);
-          width:100%;
-          height: auto;
-          position: fixed;
-          top: 0px;
-          right: 0px;
-          left: 0px;
-          background-color: white;
-          z-index: 1;
-    }
-    /*nav unordered list-style,list-style-type,float,and margin-top*/
-    nav ul{
-          list-style: none;
-          list-style-type: none;
-          float: left;
-          margin-top: 10mm;
 
-    }
-    /*nav image width,height,and float*/
-    nav img{
-              width: 240px;
-              height: 100px;
-              float: left;
-    }
-    /*nav list font-size,display,and padding*/
-    nav li{
-          font-size: 22px;
-          display: inline;
-          padding: 13px;
-    }
-    /*internal links for text-decoration,and colour*/
-    .internalLinks{
-                  text-decoration: none;
-                  color: black;
-    }
-    /*internal link hover colour*/
-    .internalLinks:hover{
-                        color: pink;
-    }
-    /*internal link active colour*/
-    .internalLinks:active{
-                        color: red;
-    }
-    /*search bar float*/
-    .searchBar{
-              float: right;
-    }
-    /*styling container width,height,padding-top,background-colour*/
-    #container{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              padding-top: 150px;
-              background-color: gray;
-              text-align: center;
-    }
-    /*styling class navigationTags anchor tag with an colour & text-decoration*/
-    .border a{
-                      color: black;
-                      text-decoration: none;
-    }
-
-    /*styling class navigationTags anchor tag with an active colour*/
-    .border a:active{
-                            color: red;
-    }
-    /*styling class navigationTags anchor tag with an hover colour*/
-    .border a:hover{
-                          color: #e38f84;
-    }
-    /*styling container1 width,height,margin-left*/
-    #container1{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: 150px;
-              padding: 4px 70px 0px 70px;
-    }
-    /*container 2 width,height,grid-row-gap,and display*/
-    #container2{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-template-rows: repeat(2,1fr);
-              width: 100%;
-              height: auto;
-              grid-row-gap:0%;
-              margin-left: 100px;
-    }
-
-    /*portfolio images active transform*/
-    .portfolioImages:active {
-                            transform: scale(2);
-    }
-    /*portfolio collage active transform */
-    .portfolioCollage:active {
-                              transform: scale(2);
-    }
-    /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
-    #carousel{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: 170px;
-              margin-top: 10px;
-              background-color: black;
-              overflow: hidden;
-    }
-    /*carousel inner width,height,float,and overflow*/
-    #carousel_inner {
-                    width:100%;
-                    height: 160px;
-    }
-    /*carousel unordered list and images width,and height*/
-    #carousel_ul li img {
-                        width: 100%;
-                        height: 150px;
-
-    }
-    /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
-    #carousel_ul {
-                  position: relative;
-                  list-style-type: none;
-                  margin: 0px;
-                  padding: 0px;
-                  top: 30px;
-                  width:112%;
-    }
-    /*carousel unordered list width,height,padding,margin,and float*/
-    #carousel_ul li {
-                    width: 200px;
-                    height: 110px;
-                    padding: 0px;
-                    margin-right: 10px;
-                    float: left;
-    }
-    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
-    #carousel_ul li img {
-                        cursor: pointer;
-                        cursor: hand;
-                        border: 0px;
-    }
-    /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
-    #container3{
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                grid-template-rows: repeat(1,1fr);
-                width: 100%;
-                height: 330px;
-                padding-left: 40px;
-    }
-
-    /*company unordered list-style*/
-    .company ul{
-                list-style: square;
-    }
-    /*company anchor tag text-decoration,and colour*/
-    .company a{
-              text-decoration: none;
-              color: black;
-    }
-    /*company anchor hover colour*/
-    .company a:hover{
-                    color: red;
-    }
-    /*company anchor active colour*/
-    .company a:active{
-                      color: red;
-    }
-
-    /*help and support unordered list-style*/
-    .helpAndSupport ul{
-                    list-style: square;
-    }
-
-    /*contact unordered list-style and list-style-type*/
-    .contact ul{
-                list-style: none;
-                list-style-type: none;
-    }
-    /*signature bar width,height,background-colour,padding,and clear*/
-    .signatureBar{
-                  display: grid;
-                  grid-template-columns: repeat(2,1fr);
-                  grid-template-rows: repeat(1,1fr);
-                  width: 100%;
-                  height: auto;
-                  background-color:#e38f84;
-    }
-    /*copyright width and height*/
-    #copyright{
-              width: 40%;
-              height: 40px;
-    }
-    /*back to top width,height,opacity,and float*/
-    #backToTop{
-              width: 5%;
-              height: 40px;
-              opacity: 0.5;
-              float: right;
-    }
-
-}
-/* Media query for ipads */
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 480px)
-  and (max-device-width: 768px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    /*this is homepage stylesheet*/
-    /*general styling*/
-    *{
-      box-sizing: border-box;
-    }
-    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
-    header{
-          display: grid;
-          grid-template-columns: repeat(1,1fr);
-          grid-template-rows: repeat(1,1fr);
-          width:100%;
-          height: auto;
-          position: fixed;
-          top: 0px;
-          right: 0px;
-          left: 0px;
-          background-color: white;
-          z-index: 1;
-    }
-    /*nav unordered list-style,list-style-type,float,and margin-top*/
-    nav ul{
-          list-style: none;
-          list-style-type: none;
-          float: left;
-          margin-top: 10mm;
-
-    }
-    /*nav image width,height,and float*/
-    nav img{
-              width: 240px;
-              height: 100px;
-              float: left;
-    }
-    /*nav list font-size,display,and padding*/
-    nav li{
-          font-size: 22px;
-          display: inline;
-          padding: 13px;
-    }
-    /*internal links for text-decoration,and colour*/
-    .internalLinks{
-                  text-decoration: none;
-                  color: black;
-    }
-    /*internal link hover colour*/
-    .internalLinks:hover{
-                        color: pink;
-    }
-    /*internal link active colour*/
-    .internalLinks:active{
-                        color: red;
-    }
-    /*search bar float*/
-    .searchBar{
-              float: right;
-    }
-    /*styling container width,height,padding-top,background-colour*/
-    #container{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              padding-top: 150px;
-              background-color: gray;
-              text-align: center;
-    }
-    /*styling class navigationTags anchor tag with an colour & text-decoration*/
-    .border a{
-              color: black;
-              text-decoration: none;
-    }
-
-    /*styling class navigationTags anchor tag with an active colour*/
-    .border a:active{
-                            color: red;
-    }
-    /*styling class navigationTags anchor tag with an hover colour*/
-    .border a:hover{
-                          color: #e38f84;
-    }
-    /*styling container1 width,height,margin-left*/
-    #container1{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: 150px;
-              /* padding: 4px 70px 0px 70px; */
-    }
-    /*container 2 width,height,grid-row-gap,and display*/
-    #container2{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-template-rows: repeat(2,1fr);
-              width: 100%;
-              height: auto;
-              grid-row-gap:0%;
-              margin-left: 0px;
-              padding-left: 110px;
-    }
-
-    /*portfolio images active transform*/
-    .portfolioImages:active {
-                            transform: scale(2);
-    }
-    /*portfolio collage active transform */
-    .portfolioCollage:active {
-                              transform: scale(2);
-    }
-    /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
-    #carousel{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: 150px;
-              margin-top: 10px;
-              background-color: black;
-              overflow: hidden;
-    }
-    /*carousel inner width,height,float,and overflow*/
-    #carousel_inner {
-                    width:100%;
-                    height: 160px;
-    }
-    /*carousel unordered list and images width,and height*/
-    #carousel_ul li img {
-                        width: 100%;
-                        height: 150px;
-
-    }
-    /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
-    #carousel_ul {
-                  position: relative;
-                  list-style-type: none;
-                  margin: 0px;
-                  padding: 0px;
-                  top: 30px;
-                  width:112%;
-    }
-    /*carousel unordered list width,height,padding,margin,and float*/
-    #carousel_ul li {
-                    width: 200px;
-                    height: 110px;
-                    padding: 0px;
-                    margin-right: 10px;
-                    float: left;
-    }
-    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
-    #carousel_ul li img {
-                        cursor: pointer;
-                        cursor: hand;
-                        border: 0px;
-    }
-    /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
-    #container3{
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                grid-template-rows: repeat(1,1fr);
-                width: 100%;
-                height: 330px;
-                padding-left: 40px;
-    }
-
-    /*company unordered list-style*/
-    .company ul{
-                list-style: square;
-    }
-    /*company anchor tag text-decoration,and colour*/
-    .company a{
-              text-decoration: none;
-              color: black;
-    }
-    /*company anchor hover colour*/
-    .company a:hover{
-                    color: red;
-    }
-    /*company anchor active colour*/
-    .company a:active{
-                      color: red;
-    }
-
-    /*help and support unordered list-style*/
-    .helpAndSupport ul{
-                    list-style: square;
-    }
-
-    /*contact unordered list-style and list-style-type*/
-    .contact ul{
-                list-style: none;
-                list-style-type: none;
-    }
-    /*signature bar width,height,background-colour,padding,and clear*/
-    .signatureBar{
-                  display: grid;
-                  grid-template-columns: repeat(2,1fr);
-                  grid-template-rows: repeat(1,1fr);
-                  width: 100%;
-                  height: auto;
-                  background-color:#e38f84;
-    }
-    /*copyright width and height*/
-    #copyright{
-              width: 40%;
-              height: 40px;
-    }
-    /*back to top width,height,opacity,and float*/
-    #backToTop{
-              width: 5%;
-              height: 40px;
-              opacity: 0.5;
-              float: right;
-    }
-
-}
-/* Media query for standard laptops */
-/* ----------- Non-Retina Screens ----------- */
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    /*this is homepage stylesheet*/
-    /*general styling*/
-    *{
-      box-sizing: border-box;
-    }
-    /*header for display,grid-template-columns,grid-template-rows,width,height,position,top,right,left,and background-colour*/
-    header{
-          display: grid;
-          grid-template-columns: repeat(1,1fr);
-          grid-template-rows: repeat(1,1fr);
-          width:100%;
-          height: auto;
-          position: fixed;
-          top: 0px;
-          right: 0px;
-          left: 0px;
-          background-color: white;
-          z-index: 1;
-    }
-    /*nav unordered list-style,list-style-type,float,and margin-top*/
-    nav ul{
-          list-style: none;
-          list-style-type: none;
-          float: left;
-          margin-top: 10mm;
-
-    }
-    /*nav image width,height,and float*/
-    nav img{
-              width: 240px;
-              height: 100px;
-              float: left;
-    }
-    /*nav list font-size,display,and padding*/
-    nav li{
-          font-size: 22px;
-          display: inline;
-          padding: 40px;
-    }
-    /*internal links for text-decoration,and colour*/
-    .internalLinks{
-                  text-decoration: none;
-                  color: black;
-    }
-    /*internal link hover colour*/
-    .internalLinks:hover{
-                        color: pink;
-    }
-    /*internal link active colour*/
-    .internalLinks:active{
-                        color: red;
-    }
-    /*search bar float*/
-    .searchBar{
-              float: right;
-    }
-    /*styling container width,height,padding-top,background-colour*/
-    #container{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              padding-top: 150px;
-              background-color: gray;
-              text-align: center;
-    }
-    /*styling class navigationTags anchor tag with an colour & text-decoration*/
-    .border a{
-                      color: black;
-                      text-decoration: none;
-    }
-
-    /*styling class navigationTags anchor tag with an active colour*/
-    .border a:active{
-                            color: red;
-    }
-    /*styling class navigationTags anchor tag with an hover colour*/
-    .border a:hover{
-                          color: #e38f84;
-    }
-    /*styling container1 width,height,margin-left*/
-    #container1{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: 150px;
-              padding: 4px 70px 0px 70px;
-    }
-    /*container 2 width,height,grid-row-gap,and display*/
-    #container2{
-              display: grid;
-              grid-template-columns: repeat(4,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              grid-row-gap:0%;
-              background-color: pink;
-    }
-
-    /*portfolio images active transform*/
-    .portfolioImages:active {
-                            transform: scale(2);
-    }
-    /*portfolio collage active transform */
-    .portfolioCollage:active {
-                              transform: scale(2);
-    }
-    /*carousel display,grid-template-columns,grid-template-rows,width,height,background-colour and overflow*/
-    #carousel{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
-              grid-template-rows: repeat(1,1fr);
-              width: 100%;
-              height: auto;
-              margin-top: 10px;
-              background-color: black;
-              overflow: hidden;
-    }
-    /*carousel inner width,height,float,and overflow*/
-    #carousel_inner {
-                    width:100%;
-                    height: 160px;
-    }
-    /*carousel unordered list and images width,and height*/
-    #carousel_ul li img {
-                        width: 100%;
-                        height: 150px;
-
-    }
-    /*carousel unordered list position,left,list-style-type,margin,padding,top,width,and padding-bottom*/
-    #carousel_ul {
-                  position: relative;
-                  list-style-type: none;
-                  margin: 0px;
-                  padding: 0px;
-                  top: 30px;
-                  width:112%;
-    }
-    /*carousel unordered list width,height,padding,margin,and float*/
-    #carousel_ul li {
-                    width: 200px;
-                    height: 110px;
-                    padding: 0px;
-                    margin-right: 10px;
-                    float: left;
-    }
-    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
-    #carousel_ul li img {
-                        cursor: pointer;
-                        cursor: hand;
-                        border: 0px;
-    }
-    /*container5 display,grid-template-column,grid-template-rows,width,height and padding-left*/
-    #container3{
-                display: grid;
-                grid-template-columns: repeat(4,1fr);
-                grid-template-rows: repeat(1,1fr);
-                width: 100%;
-                height: 330px;
-                padding-left: 40px;
-    }
-
-    /*company unordered list-style*/
-    .company ul{
-                list-style: square;
-    }
-    /*company anchor tag text-decoration,and colour*/
-    .company a{
-              text-decoration: none;
-              color: black;
-    }
-    /*company anchor hover colour*/
-    .company a:hover{
-                    color: red;
-    }
-    /*company anchor active colour*/
-    .company a:active{
-                      color: red;
-    }
-
-    /*help and support unordered list-style*/
-    .helpAndSupport ul{
-                    list-style: square;
-    }
-
-    /*contact unordered list-style and list-style-type*/
-    .contact ul{
-                list-style: none;
-                list-style-type: none;
-    }
-    /*signature bar width,height,background-colour,padding,and clear*/
-    .signatureBar{
-                  display: grid;
-                  grid-template-columns: repeat(2,1fr);
-                  grid-template-rows: repeat(1,1fr);
-                  width: 100%;
-                  height: auto;
-                  background-color:#e38f84;
-    }
-    /*copyright width and height*/
-    #copyright{
-              width: 40%;
-              height: 40px;
-    }
-    /*back to top width,height,opacity,and float*/
-    #backToTop{
-              width: 5%;
-              height: 40px;
-              opacity: 0.5;
-              float: right;
-    }
-
-}
+#portfolio_grid_container {
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'navbar'
+     'the_section1'
+     'the_portfolio_main'
+     'sponsor_carousel'
+     'homepage_about_section'
+     'footer';
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+    }
+    
+    #the_section1 {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: the_section1;
+      height: 250px;
+      background: #ebebeb;
+      font-family: 'Poppins';
+      text-align: center;
+      color: #636363;
+    }
+    
+    #the_section1 h2 {
+      margin-top: 70px;
+      font-size: 1.8em;
+    }
+    
+    #the_section1 h4 {
+      margin-top: 10px;
+    }
+    
+    #the_section1 a {
+      color: #e1918a;
+      text-decoration: none;
+    }
+    
+    #the_portfolio_main {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: the_portfolio_main;
+      border: none;
+      margin-top: 100px;
+      height: 1250px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'portfolio_header'
+     'portfolio_img_section'
+     'portfolio_btn';
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main img {
+      width: 100%;
+      height: 300px;
+    }
+    
+    #the_portfolio_main #portfolio_header {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: portfolio_header;
+      border: none;
+      height: 200px;
+      text-align: center;
+      font-family: 'Poppins';
+    }
+    
+    #the_portfolio_main #portfolio_header h2 {
+      color: #3f3f3f;
+      font-size: 1.5em;
+      border-bottom: 1px solid #3f3f3f;
+      margin-left: 550px;
+      margin-right: 550px;
+    }
+    
+    #the_portfolio_main #portfolio_header h2 #solid_border {
+      border-bottom: 3px solid #e1918a;
+    }
+    
+    #the_portfolio_main #portfolio_header h4 {
+      color: #3f3f3f;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    
+    #the_portfolio_main #portfolio_img_section {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: portfolio_img_section;
+      border: none;
+      height: 900px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'portfolio_img_row1'
+     'portfolio_img_row2'
+     'portfolio_img_row3';
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+    }
+    
+    #the_portfolio_main #portfolio_img_section img {
+      -webkit-transition: all 0.9s;
+      transition: all 0.9s;
+    }
+    
+    #the_portfolio_main #portfolio_img_section img:hover {
+      -webkit-transition: all 0.9s;
+      transition: all 0.9s;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: portfolio_img_row1;
+      border: none;
+      height: 300px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'row1_img1 row1_img2 row1_img3 row1_img4';
+      -ms-grid-columns: 1fr 20% 30% 1fr;
+          grid-template-columns: 1fr 20% 30% 1fr;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: row1_img1;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: row1_img2;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img3 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-area: row1_img3;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row1 #row1_img4 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 4;
+      grid-area: row1_img4;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row2 {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: portfolio_img_row2;
+      border: none;
+      height: 300px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'row2_img1 row2_img2 row2_img3 row2_img4';
+      -ms-grid-columns: 1fr 30% 20% 1fr;
+          grid-template-columns: 1fr 30% 20% 1fr;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: row2_img1;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: row2_img2;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img3 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-area: row2_img3;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row2 #row2_img4 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 4;
+      grid-area: row2_img4;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row3 {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: portfolio_img_row3;
+      border: none;
+      height: 300px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: 'row3_img1 row3_img2 row3_img3 row3_img4';
+      -ms-grid-columns: 1fr 20% 30% 1fr;
+          grid-template-columns: 1fr 20% 30% 1fr;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: row3_img1;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: row3_img2;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img3 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      grid-area: row3_img3;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_img_section #portfolio_img_row3 #row3_img4 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 4;
+      grid-area: row3_img4;
+      border: none;
+      overflow: hidden;
+    }
+    
+    #the_portfolio_main #portfolio_btn {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: portfolio_btn;
+      border: none;
+      height: 100px;
+      position: relative;
+      font-family: 'Poppins';
+    }
+    
+    #the_portfolio_main #portfolio_btn #portfolio_btn_1 {
+      position: absolute;
+      border: 1px solid grey;
+      border-radius: 2px;
+      padding: 2px 10px;
+      left: 47%;
+      top: 0%;
+      -webkit-transform: translate(-50%, 50%);
+              transform: translate(-50%, 50%);
+      cursor: pointer;
+    }
+    
+    #the_portfolio_main #portfolio_btn #portfolio_btn_2 {
+      position: absolute;
+      border: 1px solid grey;
+      border-radius: 2px;
+      padding: 2px 10px;
+      left: 50%;
+      top: 0%;
+      -webkit-transform: translate(-50%, 50%);
+              transform: translate(-50%, 50%);
+      cursor: pointer;
+    }
+    
+    #the_portfolio_main #portfolio_btn #portfolio_btn_3 {
+      position: absolute;
+      border: 1px solid grey;
+      border-radius: 2px;
+      padding: 2px 10px;
+      left: 53%;
+      top: 0%;
+      -webkit-transform: translate(-50%, 50%);
+              transform: translate(-50%, 50%);
+      cursor: pointer;
+    }
+    
+    .portfolio_1 {
+      display: none;
+    }
+    
+    .portfolio_2 {
+      display: none;
+    }
+    
+    .portfolio_3 {
+      display: none;
+    }
+    
